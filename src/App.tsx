@@ -2,6 +2,9 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.scss";
 import NavBar from "./components/layout/Navbar";
+import { Container, Typography } from "@mui/material";
+import TextInput from "./components/TextInput";
+import CharacterCount from "./components/CharacterCount";
 
 function App() {
     return (
@@ -41,6 +44,13 @@ function App() {
                 vitae scelerisque turpis hendrerit vel. Phasellus id consequat
                 tellus.
             </div>
+            <Container>
+                <Typography variant="h5" gutterBottom>
+                    Recoil Example
+                </Typography>
+                <TextInput />
+                <CharacterCount />
+            </Container>
         </div>
     );
 }

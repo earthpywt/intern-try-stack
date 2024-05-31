@@ -6,11 +6,12 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
+// import "./Navbar.scss";
 
 export default function NavBar() {
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="static">
+            <AppBar position="static" sx={{ backgroundColor: "#5a5a5a" }}>
                 <Toolbar>
                     <IconButton
                         size="large"
@@ -21,13 +22,10 @@ export default function NavBar() {
                     >
                         <MenuIcon />
                     </IconButton>
-                    <Typography
-                        variant="h6"
-                        component="div"
-                        sx={{ flexGrow: 1 }}
-                    >
-                        News
-                    </Typography>
+                    <Box sx={{ flexGrow: 1 }} />
+
+                    <Button color="inherit">About</Button>
+                    <Button color="inherit">Contact</Button>
                     <Button color="inherit">Login</Button>
                 </Toolbar>
             </AppBar>
